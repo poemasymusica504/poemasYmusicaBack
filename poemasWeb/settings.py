@@ -22,7 +22,7 @@ SECRET_KEY = env('SECRET_KEY')
 print(env('DEBUG'))
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['http://localhost:5173',])
 
 # Application definition
 
